@@ -1,10 +1,10 @@
 package com.socialmedia.socialmedia;
 
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@Service
 public class TeacherService {
     List<Teacher> teachers = new ArrayList<Teacher>();
 
