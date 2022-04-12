@@ -5,6 +5,8 @@ public class Teacher {
     private String name;
     private String role;
 
+    public Teacher(){}
+
     public Teacher(String id, String name, String role) {
         this.id = id;
         this.name = name;
