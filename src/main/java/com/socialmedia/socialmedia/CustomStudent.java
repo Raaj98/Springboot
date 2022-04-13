@@ -1,16 +1,15 @@
 package com.socialmedia.socialmedia;
 
-public class Student  {
+public class CustomStudent {
+
     private String id;
     private String name;
-    private String className;
 
-    public Student(){}
+    public CustomStudent(){}
 
-    public Student(String id, String name, String className) {
+    public CustomStudent(String id, String name) {
         this.id = id;
         this.name = name;
-        this.className = className;
     }
 
     public String getId() {
@@ -27,13 +26,5 @@ public class Student  {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getClassName() {
-        return className;
-    }
-
-    public void setClassName(String className) {
-        this.className = className;
     }
 }

@@ -15,6 +15,16 @@ public class StudentController {
         studentService.addStudent(student);
     }
 
+    @RequestMapping(method = RequestMethod.POST,value = "/student_ids")
+    public  List<Student> addStudentIdRequest(@RequestBody StudentIdRequest student_ids){
+       return studentService.addStudentIdRequest(student_ids.getIds());
+    }
+
+    @RequestMapping(method = RequestMethod.POST,value = "/cusStudent_ids")
+    public List<CustomStudent> addCusStudent(@RequestBody StudentIdRequest student_ids){
+        return studentService.addCusStudent(student_ids.getIds());
+    }
+
     @RequestMapping(method = RequestMethod.GET,value = "/student")
     public List<Student> getStudents(){
         return studentService.getStudents();

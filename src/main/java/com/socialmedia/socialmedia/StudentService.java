@@ -17,6 +17,33 @@ public class StudentService {
         return students;
     }
 
+    public List<Student> addStudentIdRequest(String[] student_ids){
+        List<Student>new_student_list = new ArrayList<Student>();
+        for (Student student:students){
+            for (int i=0;i<student_ids.length;i++) {
+                if (student.getId().equals(student_ids[i])) {
+                    new_student_list.add(student);
+                    break;
+                }
+            }
+        }
+        return new_student_list;
+    }
+
+    public List<CustomStudent> addCusStudent(String[] student_ids){
+        List<CustomStudent> cusStudents = new ArrayList<CustomStudent>();
+        for (Student student:students){
+            for (int i=0;i<student_ids.length;i++){
+                if (student.getId().equals(student_ids[i])){
+                    CustomStudent customStudent = new CustomStudent(student.getId(),student.getName());
+                    cusStudents.add(customStudent);
+                    break;
+                }
+            }
+        }
+        return cusStudents;
+    }
+
     public Student getStudent(String student_id) {
         Student response = null;
         for (Student student : students) {
