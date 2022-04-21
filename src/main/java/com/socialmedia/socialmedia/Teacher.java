@@ -1,23 +1,31 @@
 package com.socialmedia.socialmedia;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="raaj_teacher")
 public class Teacher {
-    private String id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
     private String name;
     private String role;
 
     public Teacher(){}
 
-    public Teacher(String id, String name, String role) {
+    public Teacher(int id, String name, String role) {
         this.id = id;
         this.name = name;
         this.role = role;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
