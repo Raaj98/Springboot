@@ -1,4 +1,4 @@
-package com.socialmedia.socialmedia;
+package com.socialmedia.socialmedia.Student;
 
 public class StudentIdRequest {
     private String [] ids;

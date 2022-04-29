@@ -1,5 +1,7 @@
-package com.socialmedia.socialmedia;
+package com.socialmedia.socialmedia.Teacher;
 
+import com.socialmedia.socialmedia.Teacher.Teacher;
+import com.socialmedia.socialmedia.Teacher.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

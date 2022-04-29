@@ -1,4 +1,4 @@
-package com.socialmedia.socialmedia;
+package com.socialmedia.socialmedia.Teacher;
 
 
 import javax.persistence.*;

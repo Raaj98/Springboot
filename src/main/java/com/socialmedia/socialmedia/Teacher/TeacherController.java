@@ -1,4 +1,4 @@
-package com.socialmedia.socialmedia;
+package com.socialmedia.socialmedia.Teacher;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

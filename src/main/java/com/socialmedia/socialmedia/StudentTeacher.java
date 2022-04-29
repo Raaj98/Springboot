@@ -1,5 +1,8 @@
 package com.socialmedia.socialmedia;
 
+import com.socialmedia.socialmedia.Student.Student;
+import com.socialmedia.socialmedia.Teacher.Teacher;
+
 public class StudentTeacher  {
     private Student[] studentList;
     private Teacher[] teacherList;
